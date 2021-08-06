@@ -23,18 +23,27 @@ Automatically installed as part of the initial install of the repo, here are a f
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-### Useful Phoenix Commands Reference
-To stop the Phoenix server:
-- Stop by typing Ctrl+C twice.
-
-To start the Phoenix server:
-- `mix phx.server`
-
 ### Ater Installing Updates
 Pull updates with git and then:
 - run `npm install` inside the `assets` directory
 - run `mix quality`
 - then you can start the server again `mix phx.server`
+
+### Useful Phoenix Commands Reference
+
+- Stop Phoenix server: type Ctrl+C twice.
+- Start Phoenix server: `mix phx.server`
+
+#### Adding static files
+
+- Static files go in `assets/static/`.
+- Images go in `assets/static/images/`.
+- Location of images after compiling for live site: `/priv/static/images/`. 
+- Example of how to link images from that location: `<img src={Routes.static_path(Endpoint, "/images/shop_card_default.png")} />`
+
+Compilation Steps for static files
+- `npm run deploy --prefix ./assets`
+- `mix phx.digest`
 
 ## Application Notes
 
@@ -42,19 +51,6 @@ Pull updates with git and then:
 _aka dev mode_, the following commands will not work on production without an admin user
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
 - `/admin/dashboard/` to view admin dashboard (currently broken as of 8/6/21)
-
-### Adding static files
-
-- Static files go in `assets/static/`.
-- Images go in `assets/static/images/`.
-
-Compilation Steps for static files
-- `npm run deploy --prefix ./assets`
-- `mix phx.digest`
-
-Location of images after compiling for live site: `/priv/static/images/`. 
-
-Example of how to link images from that location: `<img src={Routes.static_path(Endpoint, "/images/shop_card_default.png")} />`
 
 ### Other Repo Notes
 - `assets/css/bulma.scss` for theme customization (overrides Bulma defaults)

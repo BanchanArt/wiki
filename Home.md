@@ -26,7 +26,7 @@ The purpose of this wiki is to document information related to building and main
 
 The basic instructions for getting the codebase up and running are located in the [banchan repo readme](https://github.com/digitalworkersguild/banchan/blob/main/README.md). 
 
-Currently in construction are more [in-depth instructions here](/Getting-Started). 
+Currently in construction are more [in-depth instructions here](/digitalworkersguild/banchan/wiki/Getting-Started). 
 
 ### Collaborators
 

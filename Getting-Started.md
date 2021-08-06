@@ -17,7 +17,7 @@
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-### Ater Installing Updates
+### Installing Updates
 Pull updates with git and then:
 - run `npm install` inside the `assets` directory
 - run `mix quality`
@@ -28,7 +28,7 @@ Pull updates with git and then:
 - Stop Phoenix server: type Ctrl+C twice.
 - Start Phoenix server: `mix phx.server`
 
-#### Adding static files
+#### Adding Static Files
 
 - Static files go in `assets/static/`.
 - Images go in `assets/static/images/`.
@@ -46,15 +46,26 @@ _aka dev mode_, the following commands will not work on production without an ad
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
 - `/admin/dashboard/` to view admin dashboard (currently broken as of 8/6/21)
 
-### Other Repo Notes
-- `assets/css/bulma.scss` for theme customization (overrides Bulma defaults)
-- `lib/banchan/accounts/user.ex` for user account setting defaults
+### Details to Know 
+- Phoenix templates are not in use due to incompatibilities with SurfaceUI.
+- `assets/css/bulma.scss` is for theme customization (overrides Bulma defaults)
 - `banchan_view.ex` is utilities
 - `router.ex` to view all URLs and their routes
-- 
+- `priv/repo/migrations/` and `lib/banchan/` for database schema and migrations
+- Database utilizes [ecto](https://hexdocs.pm/ecto/Ecto.html).
+- `lib/banchan/accounts/user.ex` for user account setting defaults
 
 #### Dependencies of Note
 Automatically installed as part of the initial install of the repo, here are a few dependencies to be aware of that the project is built on:
 - [Bulma](https://bulma.io/)
 - [AlpineJS](https://alpinejs.dev/)
 - [SurfaceUI](https://surface-ui.org/)
+
+##### SurfaceUI Specific Details 
+- _something something ignore controllers?_ (need to ask Kat)
+- [surface slots](https://surface-ui.org/slots) go with components
+- Surface contains three different kinds of links: [normal links](https://surface-ui.org/builtincomponents/Link), [live patch](https://surface-ui.org/builtincomponents/LivePatch), and [live redirects](https://surface-ui.org/builtincomponents/LiveRedirect).
+
+#### Other Application Misc
+- For email confirmations of account creation, production uses Twilio Sendgrid, and dev uses bamboo, which does not send real emails.
+- Gigalixer hosts production site, which utilizes AWS Cloudfront.

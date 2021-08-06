@@ -8,12 +8,6 @@
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.
 
-#### Dependencies of Note
-Automatically installed as part of the initial install of the repo, here are a few dependencies to be aware of that the project is built on:
-- [Bulma](https://bulma.io/)
-- [AlpineJS](https://alpinejs.dev/)
-- [SurfaceUI](https://surface-ui.org/)
-
 ### Initial Install
 - Install dependencies with `mix deps.get`
 - Create and migrate your database with `mix ecto.setup`
@@ -58,3 +52,9 @@ _aka dev mode_, the following commands will not work on production without an ad
 - `banchan_view.ex` is utilities
 - `router.ex` to view all URLs and their routes
 - 
+
+#### Dependencies of Note
+Automatically installed as part of the initial install of the repo, here are a few dependencies to be aware of that the project is built on:
+- [Bulma](https://bulma.io/)
+- [AlpineJS](https://alpinejs.dev/)
+- [SurfaceUI](https://surface-ui.org/)

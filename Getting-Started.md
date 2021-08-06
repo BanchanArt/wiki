@@ -17,18 +17,20 @@
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
+***
+
+## Useful Commands Reference
+
+- Stop Phoenix server: type Ctrl+C twice.
+- Start Phoenix server: `mix phx.server`
+
 ### Installing Updates
 Pull updates with git and then:
 - run `npm install` inside the `assets` directory
 - run `mix quality`
 - then you can start the server again `mix phx.server`
 
-### Useful Phoenix Commands Reference
-
-- Stop Phoenix server: type Ctrl+C twice.
-- Start Phoenix server: `mix phx.server`
-
-#### Adding Static Files
+### Adding Static Files
 
 - Static files go in `assets/static/`.
 - Images go in `assets/static/images/`.
@@ -67,5 +69,5 @@ Automatically installed as part of the initial install of the repo, here are a f
 - Surface contains three different kinds of links: [normal links](https://surface-ui.org/builtincomponents/Link), [live patch](https://surface-ui.org/builtincomponents/LivePatch), and [live redirects](https://surface-ui.org/builtincomponents/LiveRedirect).
 
 #### Other Application Misc
-- For email confirmations of account creation, production uses Twilio Sendgrid, and dev uses bamboo, which does not send real emails.
-- Gigalixer hosts production site, which utilizes AWS Cloudfront.
+- For email confirmations of account creation, the production site uses Twilio Sendgrid, and the dev mode uses bamboo, which does not send real emails.
+- Gigalixer hosts the production site, which utilizes AWS Cloudfront.

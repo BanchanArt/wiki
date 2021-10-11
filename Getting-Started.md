@@ -50,16 +50,16 @@ _aka dev mode_, the following commands will not work on production without an ad
 
 ### Details to Know 
 - Phoenix templates are not in use due to incompatibilities with SurfaceUI.
-- `assets/css/bulma.scss` is for theme customization (overrides Bulma defaults)
 - `banchan_view.ex` is utilities
 - `router.ex` to view all URLs and their routes
 - `priv/repo/migrations/` and `lib/banchan/` for database schema and migrations
 - Database utilizes [ecto](https://hexdocs.pm/ecto/Ecto.html).
 - `lib/banchan/accounts/user.ex` for user account setting defaults
+- TODO: add details about TailwindCSS
 
 #### Dependencies of Note
 Automatically installed as part of the initial install of the repo, here are a few dependencies to be aware of that the project is built on:
-- [Bulma](https://bulma.io/)
+- [TailwindCSS](https://tailwindcss.com/)
 - [AlpineJS](https://alpinejs.dev/)
 - [SurfaceUI](https://surface-ui.org/)
 

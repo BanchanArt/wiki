@@ -28,10 +28,6 @@ The basic instructions for getting the codebase up and running are located in th
 
 Currently in construction are more [in-depth instructions here](/digitalworkersguild/banchan/wiki/Getting-Started). 
 
-### Collaborators
-
-Before joining as a collaborator, please reach out to us. As a co-op, we believe that work deserves compensation, and as such, we are in the process of developing a process for tracking patronage points. If you submit pull requests without going through this process, then you will both a) not be eligible for patronage points for the work done and b) likely have your pull request denied. 
-
 We encourage those interested in becoming collaborators to [join our DWG discord](https://discord.gg/swU5fzNvve) and express their interest there. 
 
 

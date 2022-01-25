@@ -26,6 +26,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ### Installing Updates
 Pull updates with git and then:
+- `mix ecto.migrate` to migrate any database changes
 - run `npm install` inside the `assets` directory
 - run `mix quality`
 - then you can start the server again `mix phx.server`

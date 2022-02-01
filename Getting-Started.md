@@ -1,8 +1,8 @@
 ## Setup
 
 ### Pre-Install Requirements
-- [Elixir 1.6+](https://elixir-lang.org/install.html)
-- Erlang 20+ (Typically auto-installs with Elixir)
+- [Elixir](https://elixir-lang.org/install.html) and Erlang (Typically auto-installs with Elixir)
+  - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/.tool-versions)
 - [Phoenix](https://hexdocs.pm/phoenix/installation.html)
 - [Postgresql](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
 

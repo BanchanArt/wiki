@@ -36,13 +36,11 @@ Pull updates with git and then:
 
 ### Adding Static Files
 
-- Static files go in `assets/static/`.
-- Images go in `assets/static/images/`.
-- Location of images after compiling for live site: `/priv/static/images/`. 
+- Static files go in `priv/static`.
+- Images go in `priv/static/images/`.
 - Example of how to link images from that location: `<img src={Routes.static_path(Endpoint, "/images/shop_card_default.png")} />`
 
-Compilation Steps for static files
-- `npm run deploy --prefix ./assets`
+Compilation Steps for static files if you need to change them:
 - `mix phx.digest`
 
 ## Application Notes

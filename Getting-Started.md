@@ -26,6 +26,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 - Stop Phoenix server: type Ctrl+C twice.
 - Start Phoenix server: `mix phx.server`
+- Check quality (which includes running tests and checking formatting commands below): `mix quality`
+- Check which tests are failing: `mix test` 
+- Check formatting: `mix credo`
 
 ### Installing Updates
 Pull updates with git and then:
@@ -42,6 +45,9 @@ Pull updates with git and then:
 
 Compilation Steps for static files if you need to change them:
 - `mix phx.digest`
+
+### Troubleshooting
+- if your local database gets absolutely borked, then run `mix ecto.reset`
 
 ## Application Notes
 

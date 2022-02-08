@@ -5,6 +5,7 @@
   - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/.tool-versions)
 - [Phoenix](https://hexdocs.pm/phoenix/installation.html)
 - [Postgresql](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
+- ImageMagick
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.
 

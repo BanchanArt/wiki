@@ -48,7 +48,8 @@ Compilation Steps for static files if you need to change them:
 - `mix phx.digest`
 
 ### Troubleshooting
-- if your local database gets absolutely borked, then run `mix ecto.reset`
+- If your local database has issues with migrations, then run `mix ecto.reset` instead of `mix ecto.migrate`.
+- You will also need to manually reset the local test database by running `MIX_ENV=test mix ecto.reset`.
 
 ## Application Notes
 

@@ -29,9 +29,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - Start Phoenix server: `mix phx.server`
 - Check quality (which includes running tests and checking formatting commands below): `mix quality`
 - Check which tests are failing: `mix test` 
-- Check formatting: `mix credo`
+- Reset everything: `mix reset`
 
 ### Installing Updates
+
 Pull updates with git and then:
 - `mix ecto.migrate` to migrate any database changes
 - run `npm install` inside the `assets` directory
@@ -48,13 +49,16 @@ Compilation Steps for static files if you need to change them:
 - `mix phx.digest`
 
 ### Troubleshooting
+
 - If your local database has issues with migrations, then run `mix ecto.reset` instead of `mix ecto.migrate`.
 - You will also need to manually reset the local test database by running `MIX_ENV=test mix ecto.reset`.
 
 ## Application Notes
 
 ### Working locally 
-_aka dev mode_, the following commands will not work on production without an admin user
+
+_aka dev mode_, the following URLs are only available to admins, or when working locally:
+
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
 - `/admin/dashboard/` to view admin dashboard
 

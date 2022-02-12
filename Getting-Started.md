@@ -5,7 +5,8 @@
   - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/.tool-versions)
 - [Phoenix](https://hexdocs.pm/phoenix/installation.html)
 - [Postgresql](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
-- ImageMagick
+- [ImageMagick](https://imagemagick.org/)
+- [Stripe CLI](https://stripe.com/docs/stripe-cli) (for local dev)
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.
 
@@ -55,6 +56,34 @@ Compilation Steps for static files if you need to change them:
 
 ## Application Notes
 
+### Environment Variables
+
+These are the env vars that Banchan uses to configure various systems:
+
+#### AWS Configuration
+
+* `AWS_ACCESS_KEY_ID` - Get this from the AWS console
+* `AWS_SECRET_ACCESS_KEY` - Get this from the AWS console
+* `S3_BUCKET_NAME` - Set this to whatever your S3 bucket name is. It can be anything.
+* `AWS_REGION` - We usually use `us-west-1`, since that's where Gigalixir is hosted but you can test against whatever you want.
+
+#### Stripe
+
+* `STRIPE_SECRET`: regular Stripe API secret key ([test](https://dashboard.stripe.com/test/apikeys), [production](https://dashboard.stripe.com/apikeys))
+* `STRIPE_ENDPOINT_SECRET`: Stripe secret for [webhooks endpoints](https://dashboard.stripe.com/webhooks). When using the stripe CLI for local dev, this is displayed when you do `mix stripe.local`.
+
+#### Sendgrid
+
+This is for sending emails. Only works in prod.
+
+* `SENDGRID_DOMAIN`
+* `SENDGRID_API_KEY`
+
+#### Database stuff
+
+* `POOL_SIZE`
+* `DATABASE_URL`
+ 
 ### Working locally 
 
 _aka dev mode_, the following URLs are only available to admins, or when working locally:
@@ -62,7 +91,7 @@ _aka dev mode_, the following URLs are only available to admins, or when working
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
 - `/admin/dashboard/` to view admin dashboard
 
-#### Local Stripe development (Draft)
+#### Local Stripe development
 
 1. Set up the [Stripe CLI](https://stripe.com/docs/stripe-cli)
 2. Find your [test mode Stripe API secret in the Stripe Dashboard](https://dashboard.stripe.com/test/apikeys) and set it as your `STRIPE_SECRET`. It looks like `sk_test_....`.
@@ -88,10 +117,10 @@ Automatically installed as part of the initial install of the repo, here are a f
 - [DaisyUI](https://daisyui.com)
 
 ##### SurfaceUI Specific Details 
-- _something something ignore controllers?_ (need to ask Kat)
+
 - [surface slots](https://surface-ui.org/slots) go with components
 - Surface contains three different kinds of links: [normal links](https://surface-ui.org/builtincomponents/Link), [live patch](https://surface-ui.org/builtincomponents/LivePatch), and [live redirects](https://surface-ui.org/builtincomponents/LiveRedirect).
 
 #### Other Application Misc
-- For email confirmations of account creation, the production site uses Twilio Sendgrid, and the dev mode uses bamboo, which does not send real emails.
-- Gigalixer hosts the production site, which utilizes AWS Cloudfront.
+- For email confirmations of account creation, the production site uses Twilio Sendgrid. No real emails are sent during local dev.
+- Gigalixir hosts the production site, which utilizes AWS.

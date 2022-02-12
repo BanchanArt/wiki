@@ -58,7 +58,16 @@ _aka dev mode_, the following commands will not work on production without an ad
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
 - `/admin/dashboard/` to view admin dashboard
 
+#### Local Stripe development (Draft)
+
+1. Set up the [Stripe CLI](https://stripe.com/docs/stripe-cli)
+2. Find your [test mode Stripe API secret in the Stripe Dashboard](https://dashboard.stripe.com/test/apikeys) and set it as your `STRIPE_SECRET`. It looks like `sk_test_....`.
+3. Invoke `stripe listen --forward-to localhost:4000/api/stripe_webhook`
+4. Set the signing secret it displays as your `STRIPE_ENDPOINT_SECRET`. It looks like `whsec_...`.
+5. Fire up mix phx.server and go do some fake money stuff!
+
 ### Details to Know 
+
 - Phoenix templates are not in use due to incompatibilities with SurfaceUI.
 - `banchan_view.ex` is utilities
 - `router.ex` to view all URLs and their routes

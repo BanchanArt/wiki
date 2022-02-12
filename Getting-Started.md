@@ -56,7 +56,7 @@ Compilation Steps for static files if you need to change them:
 ### Working locally 
 _aka dev mode_, the following commands will not work on production without an admin user
 - `/admin/sent_emails` to view confirmation emails, password resets, etc since dev mode does not send real emails
-- `/admin/dashboard/` to view admin dashboard (currently broken as of 8/6/21)
+- `/admin/dashboard/` to view admin dashboard
 
 ### Details to Know 
 - Phoenix templates are not in use due to incompatibilities with SurfaceUI.

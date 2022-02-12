@@ -62,7 +62,7 @@ _aka dev mode_, the following commands will not work on production without an ad
 
 1. Set up the [Stripe CLI](https://stripe.com/docs/stripe-cli)
 2. Find your [test mode Stripe API secret in the Stripe Dashboard](https://dashboard.stripe.com/test/apikeys) and set it as your `STRIPE_SECRET`. It looks like `sk_test_....`.
-3. Invoke `stripe listen --forward-to localhost:4000/api/stripe_webhook`
+3. Invoke `mix stripe.local` to forward webhook events to your local dev server
 4. Set the signing secret it displays as your `STRIPE_ENDPOINT_SECRET`. It looks like `whsec_...`.
 5. Fire up mix phx.server and go do some fake money stuff!
 

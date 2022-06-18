@@ -52,6 +52,16 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Application Notes
 
+### Working with Stripe
+
+Stripe has [a number of credit card and account numbers for testing](https://stripe.com/docs/testing).
+
+Of note:
+
+* `4000000000000077`: Instantly succeeds a payment, bypassing the pending period (so the amount can be immediately paid out)
+* `4000000000000002`: Card declined
+* `4242424242424242`: US-based transaction that immediately succeeds but is subject to the payout waiting period (7 days for an account's first payout, even in test mode)
+
 ### Environment Variables
 
 These are the env vars that Banchan uses to configure various systems **in production**:

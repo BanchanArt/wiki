@@ -1,5 +1,3 @@
-# Environment Variables
-
 These are the env vars that Banchan uses to configure various systems **in production**:
 
 ## AWS Configuration

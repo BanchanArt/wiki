@@ -2,6 +2,8 @@ These are the env vars that Banchan uses to configure various systems **in produ
 
 ## AWS Configuration
 
+These are not required for local development. Uploads are managed locally if no S3 config stuff is present.
+
 * `AWS_ACCESS_KEY_ID` - Get this from the AWS console
 * `AWS_SECRET_ACCESS_KEY` - Get this from the AWS console
 * `S3_BUCKET_NAME` - Set this to whatever your S3 bucket name is. It can be anything.
@@ -9,17 +11,21 @@ These are the env vars that Banchan uses to configure various systems **in produ
 
 ## Stripe
 
+You'll need to set up Stripe if you want to do anything having to do with Studio setup, commissions, transactions, etc, even locally. Fortunately, accounts are relatively easy to make. Note that you'll also want the Stripe CLI (See [[Getting Started|Getting-Started]] for details).
+
 * `STRIPE_SECRET`: regular Stripe API secret key ([test](https://dashboard.stripe.com/test/apikeys), [production](https://dashboard.stripe.com/apikeys))
 * `STRIPE_ENDPOINT_SECRET`: Stripe secret for [webhooks endpoints](https://dashboard.stripe.com/webhooks). When using the stripe CLI for local dev, this is displayed when you do `mix stripe.local`.
 
 ## Sendgrid
 
-This is for sending emails. Only works in prod.
+This is for sending emails. Only works in prod. Won't be used at all in dev even if you want to.
 
 * `SENDGRID_DOMAIN`
 * `SENDGRID_API_KEY`
 
 ## Database stuff
+
+These are **only used for production**. If you want to configure how the database gets accessed in dev, use dev.secrets.exs instead.
 
 * `POOL_SIZE`
 * `DATABASE_URL`

@@ -97,4 +97,5 @@ Automatically installed as part of the initial install of the repo, here are a f
 #### Other Application Misc
 
 - For email confirmations of account creation, the production site uses Twilio Sendgrid. No real emails are sent during local dev.
-- Gigalixir hosts the production site, which utilizes AWS.
+- [Fly.io](https://fly.io) hosts the production site.
+- Images are hosted on S3 in production, and in `priv/uploads` in dev/test.

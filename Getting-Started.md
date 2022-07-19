@@ -6,7 +6,7 @@
 - [Postgresql v13 or later](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
 - [ImageMagick](https://imagemagick.org/)
 - [NodeJS](https://nodejs.org/en/download/)
-  - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/phoenix_static_buildpack.config)
+  - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/Dockerfile#L27)
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.
@@ -53,6 +53,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ## Application Notes
 
 ### Working with Stripe
+
+In order to create studios and test transactions locally, you need to create your own Stripe account. The country _must_ be set to the United States, since that's what Banchan currently expects and it's not configurable. You'll also need to install and run the [Stripe CLI](https://stripe.com/docs/stripe-cli).
 
 Stripe has [a number of credit card and account numbers for testing](https://stripe.com/docs/testing).
 

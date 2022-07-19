@@ -2,7 +2,7 @@
 
 ### Pre-Install Requirements
 - [Elixir](https://elixir-lang.org/install.html) and Erlang (Typically auto-installs with Elixir)
-  - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/.tool-versions)
+  - [Check versions here.](https://github.com/digitalworkersguild/banchan/blob/main/Dockerfile#L15-L16)
 - [Postgresql v13 or later](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
 - [ImageMagick](https://imagemagick.org/)
 - [NodeJS](https://nodejs.org/en/download/)

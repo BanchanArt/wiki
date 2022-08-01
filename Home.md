@@ -15,7 +15,7 @@ The purpose of this wiki is to document information related to building and main
  
 ## Contributing
 
-Please see our [Contribution Guide](/digitalworkersguild/banchan/blob/main/CONTRIBUTING.md) and the [[Getting Started wiki page|Getting-Started]] to contribute!
+Please see our [Contribution Guide](/BanchanArt/banchan/blob/main/CONTRIBUTING.md) and the [[Getting Started wiki page|Getting-Started]] to contribute!
 
 We encourage those interested in becoming collaborators to [join our DWG discord](https://discord.gg/swU5fzNvve) and express their interest there. 
 

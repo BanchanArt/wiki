@@ -8,6 +8,9 @@
 - [FFmpeg](https://ffmpeg.org/download.html)
 - [NodeJS](https://nodejs.org/en/download/)
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L27)
+- [Stripe Account](https://stripe.com)
+  - For local dev, you don't need to provide all your details. You'll be working in test mode.
+  - Make sure to [activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) and add an origin address (if local dev, do it in test mode).
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.

@@ -17,9 +17,8 @@
 
 ### Initial Install
 
-- Install dependencies with `mix deps.get`
 - Copy `config/dev.secret.example.exs` to `config/dev.secret.exs` and fill out the relevant fields as instructed.
-- Create and migrate your database with `mix ecto.setup`.
+- Install Elixir dependencies, NPM packages, and set up/migrate the database with `mix setup`.
 - To make sure everything is good, run `mix quality`
 - Start your local Stripe server with `mix stripe.local`
 - Start Phoenix endpoint with `mix phx.server`

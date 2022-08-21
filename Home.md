@@ -1,4 +1,4 @@
-# About Banchan Art
+## About Banchan Art
 
 Banchan Art is a website focused on providing a user-friendly space for
 artists for managing their clients, commissions, and invoices, and for patrons
@@ -6,7 +6,7 @@ to discover artists to commission art from.
 
 It's created, owned, and maintained with love and solidarity by the [Banchan Art LLC](https://banchan.art), a worker- and artist-owned organization.
 
-# About the Wiki
+## About the Wiki
 The purpose of this wiki is to document information related to building and maintaining the Banchan Art application.
  
 ## Contributing

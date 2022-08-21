@@ -52,3 +52,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ### Troubleshooting
 
 - If your local database has issues with migrations, then run `mix ecto.reset` instead of `mix ecto.migrate`.
+
+## Next Steps
+
+Check out [[Application Notes|Application-Notes]] for more details, such as where things are hosted, and how to work with Stripe transactions.

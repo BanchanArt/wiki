@@ -56,6 +56,22 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Application Notes
 
+### Services
+
+Banchan uses the following third-party services as part of its development and deployment:
+
+* GitHub - Code hosting, project management
+* Fly.io - Platform + database hosting and clustering
+* Amazon S3 - File/image uploads storage
+* Plausible - Web analytics
+* Netlify - Landing page hosting, beta signup email form collection
+* Stripe - Stripe Connect Express with Stripe Tax for payment processing and tax management
+* Sendgrid - Sending emails (both transactional and marketing)
+* Sentry.io(?) - (planned?) Logging and error logging
+* Google - OAuth login
+* Discord - OAuth login
+* Twitter - OAuth login
+
 ### Working with Stripe
 
 In order to create studios and test transactions locally, you need to create your own Stripe account. The country _must_ be set to the United States, since that's what Banchan currently expects and it's not configurable. It needs to have [Stripe Tax activated](https://dashboard.stripe.com/setup/tax/activate). You'll also need to install and run the [Stripe CLI](https://stripe.com/docs/stripe-cli).

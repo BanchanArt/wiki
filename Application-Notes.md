@@ -23,8 +23,6 @@ Stuff we don't use yet, but might be nice to afford in the future:
 
 ## Working with Stripe
 
-In order to create studios and test transactions locally, you need to create your own Stripe account. The country _must_ be set to the United States, since that's what Banchan currently expects and it's not configurable. It needs to have [Stripe Tax activated](https://dashboard.stripe.com/setup/tax/activate). You'll also need to install and run the [Stripe CLI](https://stripe.com/docs/stripe-cli).
-
 Stripe has [a number of credit card and account numbers for testing](https://stripe.com/docs/testing).
 
 Of note:

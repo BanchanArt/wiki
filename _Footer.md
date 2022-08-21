@@ -1,1 +1,1 @@
-Created and maintained by [DWG LLC](https://www.dwg.dev/), 2022.
+Created and maintained by [Banchan Art LLC](https://banchan.art/), 2022.

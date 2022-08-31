@@ -1,5 +1,16 @@
 These are the env vars that Banchan uses to configure various systems **in production**:
 
+## Secret Key
+
+* `SECRET_KEY_BASE` - defines the base secret for encryption stuff. You can generate one with `mix phx.gen.secret`.
+
+## Database stuff
+
+These are **only used for production**. If you want to configure how the database gets accessed in dev, use dev.secrets.exs instead.
+
+* `POOL_SIZE` - Number of database connections to keep in the pool.
+* `DATABASE_URL` - Database details, formatted like `psql://user:password@host:port/database`.
+
 ## AWS Configuration
 
 These are not required for local development. Uploads are managed locally if no S3 config stuff is present.
@@ -23,12 +34,9 @@ This is for sending emails. Only works in prod. Won't be used at all in dev even
 * `SENDGRID_DOMAIN`
 * `SENDGRID_API_KEY`
 
-## Database stuff
+## Sentry
 
-These are **only used for production**. If you want to configure how the database gets accessed in dev, use dev.secrets.exs instead.
-
-* `POOL_SIZE`
-* `DATABASE_URL`
+* `SENTRY_DSN` - Sentry.io DSN url for error reporting. Optional. You can grab one at `https://sentry.io/settings/{organization}/projects/elixir/keys/`.
 
 ## OAuth
 
@@ -54,3 +62,8 @@ You can get these from https://console.developers.google.com/apis/credentials
 
 * `GOOGLE_CLIENT_ID`
 * `GOOGLE_CLIENT_SECRET`
+
+## GitHub
+
+* `GITHUB_PAT` - Personal access token to for a GitHub user with the `public_repo` scope enabled and write access to the repository you want to post issues to.
+  * NB(@zkat): this is currently not configurable

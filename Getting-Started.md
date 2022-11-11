@@ -3,7 +3,7 @@
 ### Pre-Install Requirements
 - [Elixir](https://elixir-lang.org/install.html) and Erlang (Typically auto-installs with Elixir)
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L15-L16)
-- [Postgresql v13 or later](https://wiki.postgresql.org/wiki/Detailed_installation_guides)
+- [Postgresql v13 or later](https://wiki.postgresql.org/wiki/Detailed_installation_guides) ATM the tests require a postgres/postgres user/password to run. Check [this doc](https://academind.com/tutorials/postgresql-start-stop-uninstall-upgrade-server#resetting-the-root-user-password  ) for info on how to reset your postgres password. 
 - [ImageMagick](https://imagemagick.org/)
 - [FFmpeg](https://ffmpeg.org/download.html)
 - [NodeJS](https://nodejs.org/en/download/)

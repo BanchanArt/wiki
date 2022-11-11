@@ -9,7 +9,7 @@
 - [NodeJS](https://nodejs.org/en/download/)
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L27)
 - [Stripe Account](https://stripe.com)
-  - Your country MUST be set to "United States". If you don't know how to do this, or you get an error like "You cannot request the `transfers` capability without the `card_payments` capability for accounts in US." during setup step, try creating a new account by going to the top left drop down and choosing `+ New account` and create a new account set to US, with all the settings you need.
+  - Your country MUST be set to "United States". If you don't know how to do this, or you get an error like "You cannot request the \`transfers\` capability without the \`card_payments\` capability for accounts in US." during setup step, try creating a new account by going to the top left drop down and choosing `+ New account` and create a new account set to US, with all the settings you need.
   - [Activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) and add an origin address (if local dev, do it in test mode).
   - For local dev, you don't need to provide all your details. You'll be working in test mode.
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)

@@ -9,7 +9,7 @@
 - [NodeJS](https://nodejs.org/en/download/)
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L27)
 - [Stripe Account](https://stripe.com)
-  - Your country MUST be set to "United States". If you don't know how to do this, or you get an error like "You cannot request the \`transfers\` capability without the \`card_payments\` capability for accounts in US." during setup step, try creating a new account by going to the top left drop down and choosing `+ New account` and create a new account set to US, with all the settings you need.
+  - Your country MUST be set to "United States". If you have problems, try creating a new account (top left button on dashboard, choose `+ New account`) and set as required.
   - [Activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) and add an origin address (if local dev, do it in test mode).
   - For local dev, you don't need to provide all your details. You'll be working in test mode.
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)
@@ -18,8 +18,9 @@
 
 ### Initial Install
 
+- Fork this repository, clone it and create a new branch to make changes [(guide here)](https://docs.github.com/en/get-started/quickstart/contributing-to-projects). Follow [github flow](https://docs.github.com/en/get-started/quickstart/github-flow) when you are ready to make changes.
 - Copy `config/dev.secret.example.exs` to `config/dev.secret.exs` and fill out the relevant fields as instructed.
-- Install Elixir dependencies, NPM packages, and set up/migrate the database with `mix setup`.
+- Install Elixir dependencies, NPM packages, and set up/migrate the database with `mix setup`. (If you have to run setup more than once, you may need to run `mix ecto.drop` to get rid of databases, which is what setup expects)
 - To make sure everything is good, run `mix quality`
 - Start your local Stripe server with `mix stripe.local`
 - Start Phoenix endpoint with `mix phx.server`

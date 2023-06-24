@@ -49,7 +49,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 - Static files go in `priv/static`.
 - Images go in `priv/static/images/`.
-- Example of how to link images from that location: `<img src={Routes.static_path(Endpoint, "/images/shop_card_default.png")} />`
+- Example of how to link images from that location: `<img src={~p"/images/shop_card_default.png"} />`
 
 ### Troubleshooting
 

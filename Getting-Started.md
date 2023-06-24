@@ -24,6 +24,7 @@
 - To make sure everything is good, run `mix quality`
 - Start your local Stripe server with `mix stripe.local`
 - Start Phoenix endpoint with `mix phx.server`
+- If you're using VS Code, you can run the `Create terminals` task in order to start a terminal group that automatically runs the stripe and phoenix services, above (instead of having to manage them manually).
 - [Windows Only] If you want color output for tests, [run this command in your terminal](https://hexdocs.pm/mix/1.13/Mix.Tasks.Test.html#module-coloring): `reg add HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.

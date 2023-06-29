@@ -9,10 +9,9 @@ Banchan uses the following third-party services as part of its development and d
 * [Netlify](https://netlify.com) - Landing page hosting, beta signup email form collection
 * [Stripe](https://stripe.com/connect) - Stripe Connect Express with Stripe Tax for payment processing and tax management
 * [Sendgrid](https://sendgrid.com/) - Sending emails (both transactional and marketing)
-* [Sentry.io](https://sentry.io/)(?) - (planned?) Logging and error logging
+* [Sentry.io](https://sentry.io/) - Logging and error logging
 * Google - OAuth login
 * Discord - OAuth login
-* Twitter - OAuth login
 
 ### Services Wishlist
 

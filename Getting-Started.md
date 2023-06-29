@@ -42,7 +42,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - `mix test`: Run just the test suite.
 - `mix credo`: Run the linter/static analyzer. It tends to be pretty picky. You can ignore messages about TODOs.
 - `mix format`/`mix fmt`: format your code.
-- `mix quality`: Runs test + credo + format together.
+- `mix quality`: Runs test + credo + check format together.
 - `mix test test/path/here.ex`: run a specific test file. Append `:<LINE>` to execute a specific test in that file.
 
 ### Adding Static Files

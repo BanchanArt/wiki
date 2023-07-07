@@ -10,6 +10,7 @@
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L27)
 - [Stripe Account](https://stripe.com)
   - Your country MUST be set to "United States". If you have problems, try creating a new account (top left button on dashboard, choose `+ New account`) and set as required.
+  - [Activate Stripe Connect](https://dashboard.stripe.com/setup/connect/activate).
   - [Activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) and add an origin address (if local dev, do it in test mode).
   - For local dev, you don't need to provide all your details. You'll be working in test mode.
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)

@@ -10,9 +10,26 @@
   - [Check versions here.](https://github.com/BanchanArt/banchan/blob/main/Dockerfile#L27)
 - [Stripe Account](https://stripe.com)
   - Your country MUST be set to "United States". If you have problems, try creating a new account (top left button on dashboard, choose `+ New account`) and set as required.
-  - [Activate Stripe Connect](https://dashboard.stripe.com/setup/connect/activate).
-  - [Activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) and add an origin address (if local dev, do it in test mode).
+  - [Activate Stripe Connect](https://dashboard.stripe.com/setup/connect/activate) (if doing this in local test, enable test mode toggle first)
+    - Set up your Platform Profile:
+      - Select "E-commerce"
+      - Select "From your platform's website or app"
+      - Select "Your Platform's name"
+      - Select "Your Platform"
+      - Select "Yes"
+      - Select "No"
+      - Submit the profile
+  - [Activate Stripe Tax](https://dashboard.stripe.com/setup/tax/activate) (if doing this in local test, enable test mode toggle first)
+    - Use Banchan Art LLC's address as the origin address if you don't want to use your own, or you're outside the US (the account MUST be set up in the US):
+      - Addr 1: 440 N BARRANCA AVE
+      - Addr 2: #8687
+      - City: COVINA
+      - State: California
+      - zip: 91723
+    - Say that you're registered to collect taxes in your state
+    - Start collecting immediately
   - For local dev, you don't need to provide all your details. You'll be working in test mode.
+  - For local dev, your **Stripe secret key** is at https://dashboard.stripe.com/test/apikeys
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.

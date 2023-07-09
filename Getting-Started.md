@@ -31,6 +31,9 @@
   - For local dev, you don't need to provide all your details. You'll be working in test mode.
   - For local dev, your **Stripe secret key** is at https://dashboard.stripe.com/test/apikeys
 - [Stripe CLI](https://stripe.com/docs/stripe-cli) (only for local dev)
+- If you're using VS Code:
+  - Install the [ElixirLS extension](https://marketplace.visualstudio.com/items?itemName=JakeBecker.elixir-ls)
+  - Install the [Surface extension](https://marketplace.visualstudio.com/items?itemName=msaraiva.surface)
 
 > Note: If postgresql installed via homebrew, make sure to run `/usr/local/opt/postgres/bin/createuser -s postgres`.
 

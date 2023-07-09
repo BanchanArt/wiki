@@ -41,6 +41,7 @@
 
 - Fork this repository, clone it and create a new branch to make changes [(guide here)](https://docs.github.com/en/get-started/quickstart/contributing-to-projects). Follow [github flow](https://docs.github.com/en/get-started/quickstart/github-flow) when you are ready to make changes.
 - Copy `config/dev.secret.example.exs` to `config/dev.secret.exs` and fill out the relevant fields as instructed.
+- (If your postgres config is different from what's in `config/test.exs`): Copy `config/test.secret.example.exs` to `config/test.secret.exs` and configure postgres credentials as needed.
 - Install Elixir dependencies, NPM packages, and set up/migrate the database with `mix setup`. (If you have to run setup more than once, you may need to run `mix ecto.drop` to get rid of databases, which is what setup expects)
 - To make sure everything is good, run `mix quality`
 - Start your local Stripe server with `mix stripe.local`

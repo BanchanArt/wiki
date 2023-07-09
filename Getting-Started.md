@@ -66,6 +66,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - `mix format`/`mix fmt`: format your code.
 - `mix quality`: Runs test + credo + check format together.
 - `mix test test/path/here.ex`: run a specific test file. Append `:<LINE>` to execute a specific test in that file.
+- `mix phx.server`: Start the app.
+  - This is generally all you need to run after every pull, although sometimes you won't even have to restart and the server will update its code automatically while running. You might need to restart when configs change, or when you need to run migrations.
+- `mix ecto.migrate`: Run a migration, if needed.
 
 ### Adding Static Files
 

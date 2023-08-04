@@ -39,6 +39,12 @@ There's a number of env vars you need to get set up to get up and running, depen
 - Phoenix templates are not in used due to incompatibilities with SurfaceUI.
 - `router.ex` to view all URLs and their routes
 - `priv/repo/migrations/` and `lib/banchan/` for database schema and migrations
+- `lib/banchan/uploads/uploads.ex` contains the upload configuration except for max file size, which is set in `config/config.exs`
+- `lib/banchan/workers/thumbnailer.ex` is where ImageMagick handles the images, which includes a memory usage limit to 128mb and two jobs at a time. 
+  - This limit is relevant when testing on non-local dev (dev.banchan.art) as the memory limit is low, which can cause a OOM killed event on that dev server.
+- Troubleshooting on non-local Dev and on Production
+  - Non-local Dev logs: <https://fly.io/apps/banchan-dev/monitoring>
+  - Production logs: <https://fly.io/apps/banchan-prod/monitoring>
 
 ## Dependencies of Note
 

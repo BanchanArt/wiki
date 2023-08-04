@@ -70,6 +70,10 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
   - This is generally all you need to run after every pull, although sometimes you won't even have to restart and the server will update its code automatically while running. You might need to restart when configs change, or when you need to run migrations.
 - `mix ecto.migrate`: Run a migration, if needed.
 
+### Useful data for local dev
+- `seeds.exs` has admin user for local dev
+- to confirm email on local user go to `/admin/sent_emails`
+
 ### Adding Static Files
 
 - Static files go in `priv/static`.

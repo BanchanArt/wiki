@@ -83,7 +83,13 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ### Troubleshooting
 
 - If your local database has issues with migrations, then run `mix ecto.reset` instead of `mix ecto.migrate`.
+- If after pulling updates, new dependencies are added, then you need to run `npm install ./assets/`
 
 ## Next Steps
 
 Check out [[Application Notes|Application-Notes]] for more details, such as where things are hosted, and how to work with Stripe transactions.
+
+### Best Practices
+- With resolving an issue, please mark the PR as fixing that issue, and let GitHub auto-close the issue when the PR gets merged.
+  - [Keywords to close issues automatically via the PR ](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword)
+- When performing squash/merge via a PR, please list the Fixes in the commit message (one line per fixed issue) as well

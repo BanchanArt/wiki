@@ -83,7 +83,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 ### Troubleshooting
 
 - If your local database has issues with migrations, then run `mix ecto.reset` instead of `mix ecto.migrate`.
-- If after pulling updates, new dependencies are added, then you need to run `npm install ./assets/`
+- If after pulling updates, new dependencies are added, then you need to run `npm install ./assets/` or `mix deps.get`
 
 ## Next Steps
 

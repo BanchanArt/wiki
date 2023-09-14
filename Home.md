@@ -1,4 +1,4 @@
-## About Banchan Art
+## About Banchan Art :art:
 
 Banchan Art is a website focused on providing a user-friendly space for
 artists for managing their clients, commissions, and invoices, and for patrons

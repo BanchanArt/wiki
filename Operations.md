@@ -49,9 +49,7 @@ See [Flyctl Reference Guide](https://fly.io/docs/reference/) for more commands t
 ## Other Notes
 - Deployment settings exist in `fly.toml`, `mix.exs`, and `Dockerfile` (not to be confused the one in `.devcontainer`, which is for local dev).
 
-<sup>[1](#footnote1)</sup>
-
-<a name="footnote1">1</a>: Requires invite to Sentry.io
+<a name="footnote1">1</a>: Requires invite to Sentry.io <br/>
 <a name="footnote2">2</a>: Requires user with dev permissions on production
 
 

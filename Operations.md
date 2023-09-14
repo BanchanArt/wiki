@@ -51,8 +51,9 @@ See [Flyctl Reference Guide](https://fly.io/docs/reference/) for more commands t
 
 ---
 
-<sup><a name="footnote1">Footnote 1</a></sup>: Requires invite to Sentry.io <br/>
-<sup><a name="footnote2">Footnote 2</a></sup>: Requires user with dev permissions on production
+<sup>Footnotes</sup>
+<sup><a name="footnote1">1:</a></sup> Requires invite to Sentry.io <br/>
+<sup><a name="footnote2">2:</a></sup> Requires user with dev permissions on production
 
 
 

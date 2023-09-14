@@ -8,7 +8,8 @@ Our setup is basically fly.io + GitHub Actions + S3. Sentry is used for monitori
 
 ## Connecting to Servers
 
-Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.
+> [!IMPORTANT]
+> Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.
 
 1.  Login via Flyctl `fly auth login`
 2.  Verify access to servers `flyctl apps list`
@@ -16,7 +17,8 @@ Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to ou
     -   after connecting to the server for the first time, you'll be able to connect with this shorter command `fly ssh console -a banchan-dev`
 
 ## Manual Deployment
-This process is only for use if Github Actions breaks again. 
+> [!WARNING]
+> This process is only for use if Github Actions breaks again. 
 
 Requires: 
 - Oban Setup locally
@@ -31,23 +33,26 @@ Requires:
 From the CLI
 - For status: Run `flyctl machine status -a` plus the app name
 - For restart: Run `flyctl machine restart -a` plus the app name
-  - Note: this restarts every server involved with the app name. Alternatively, you can restart individual machines via machine id.
+
+> [!NOTE]
+> This restarts every server involved with the app name. Alternatively, you can restart individual machines via machine id.
 
 See [Flyctl Reference Guide](https://fly.io/docs/reference/) for more commands to run.
 
 ## Monitoring
 -   [Dev Server Logs on Fly.io](https://fly.io/apps/banchan-dev/monitoring)
 -   [Production Server Logs on Fly.io](https://fly.io/apps/banchan-prod/monitoring)
--   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/)[^1]
--   [Oban Web](https://banchan.art/admin/oban)[^2]
--   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home)[^2]
+-   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/)<sup>[1](#footnote1)</sup>
+-   [Oban Web](https://banchan.art/admin/oban)<sup>[2](#footnote2)</sup>
+-   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home)<sup>[2](#footnote2)</sup>
 
 ## Other Notes
 - Deployment settings exist in `fly.toml`, `mix.exs`, and `Dockerfile` (not to be confused the one in `.devcontainer`, which is for local dev).
 
+<sup>[1](#footnote1)</sup>
 
-[^1]&#x3A; Requires invite to Sentry.io
-[^2]&#x3A; Requires user with dev permissions on production
+<a name="footnote1">1</a>: Requires invite to Sentry.io
+<a name="footnote2">2</a>: Requires user with dev permissions on production
 
 
 

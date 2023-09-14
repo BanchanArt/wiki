@@ -1,11 +1,10 @@
-## About Operations
-Our setup is basically fly.io + GitHub Actions + S3. Sentry is used for monitoring and logging errors on production. Additional third party serives are listed in \[[Application Notes|Application-Notes]].
+Our setup is basically fly.io + GitHub Actions + S3. Sentry is used for monitoring and logging errors on production. Additional third party services are listed in \[[Application Notes|Application-Notes]].
 
 ## Automated Deployment
-1.  When you deploy to main, we do our regular CI testing and then we deploy to staging/dev, automatically.
-2.  If you do `mix bump <major|minor|patch>` on main, it'll bump the Banchan Art version accordinly.
+1.  Deploying to main on Github triggers CI testing. After CI testing, Github Actions automatically deploys to staging/dev.
+2.  Run `mix bump <major|minor|patch>` on main, which will bump the Banchan Art version accordinly.
     -  That will trigger a new run, which will deploy to staging again; it also generates a GitHub Release with automatically-generated release notes based on merged pull requests.
-    -  That Github Release then triggers a release to prod.
+    -  That Github Release then triggers a release to production.
 
 ## Connecting to Servers
 
@@ -19,7 +18,7 @@ Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to ou
 ## Manual Deployment
 This process is only for use if Github Actions breaks again. 
 
-Requires 
+Requires: 
 - Oban Setup locally
 - Logged in via [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.
 
@@ -39,11 +38,17 @@ See [Flyctl Reference Guide](https://fly.io/docs/reference/) for more commands t
 ## Monitoring
 -   [Dev Server Logs on Fly.io](https://fly.io/apps/banchan-dev/monitoring)
 -   [Production Server Logs on Fly.io](https://fly.io/apps/banchan-prod/monitoring)
--   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/) (Requires invite to Sentry.io)
--   [Oban Web](https://banchan.art/admin/oban) (Requires user with dev permissions on production)
--   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home) (Requires user with dev permissions on production)
+-   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/)[^1]
+-   [Oban Web](https://banchan.art/admin/oban)[^2]
+-   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home)[^2]
 
 ## Other Notes
-- Deployment settings exist in `fly.toml`, `mix.exs`, and `Dockerfile` (not to be confused the one in `.devcontainer`, which is for local dev)
+- Deployment settings exist in `fly.toml`, `mix.exs`, and `Dockerfile` (not to be confused the one in `.devcontainer`, which is for local dev).
+
+
+[^1]&#x3A; Requires invite to Sentry.io
+[^2]&#x3A; Requires user with dev permissions on production
+
+
 
 

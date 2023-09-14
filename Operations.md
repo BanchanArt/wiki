@@ -9,7 +9,7 @@ Our setup is basically fly.io + GitHub Actions + S3. Sentry is used for monitori
 ## Connecting to Servers
 
 > [!IMPORTANT]
-> Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.
+> Requires [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.<sup>[1](#footnote1)</sup>
 
 1.  Login via Flyctl `fly auth login`
 2.  Verify access to servers `flyctl apps list`
@@ -22,7 +22,7 @@ Our setup is basically fly.io + GitHub Actions + S3. Sentry is used for monitori
 
 Requires: 
 - Oban Setup locally
-- Logged in via [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.
+- Logged in via [Flyctl](https://fly.io/docs/hands-on/install-flyctl/) and access to our Fly.io servers.<sup>[1](#footnote1)</sup>
 
 1.  Go to local repo.
 2.  Ensure local repo is up to date.
@@ -40,20 +40,21 @@ From the CLI
 See [Flyctl Reference Guide](https://fly.io/docs/reference/) for more commands to run.
 
 ## Monitoring
--   [Dev Server Logs on Fly.io](https://fly.io/apps/banchan-dev/monitoring)
--   [Production Server Logs on Fly.io](https://fly.io/apps/banchan-prod/monitoring)
--   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/)<sup>[1](#footnote1)</sup>
+-   [Dev Server Logs on Fly.io](https://fly.io/apps/banchan-dev/monitoring)<sup>[1](#footnote1)</sup>
+-   [Production Server Logs on Fly.io](https://fly.io/apps/banchan-prod/monitoring)<sup>[1](#footnote1)</sup>
+-   [Error Logs on Sentry.io](https://sentry.io/organizations/banchan-art/issues/)<sup>[2](#footnote2)</sup>
 -   [Oban Web](https://banchan.art/admin/oban)<sup>[2](#footnote2)</sup>
--   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home)<sup>[2](#footnote2)</sup>
+-   [Phoenix Live Dashboard](https://banchan.art/admin/dashboard/home)<sup>[3](#footnote2)</sup>
 
 ## Other Notes
 - Deployment settings exist in `fly.toml`, `mix.exs`, and `Dockerfile` (not to be confused the one in `.devcontainer`, which is for local dev).
 
 ---
 
-<sup>Footnotes</sup>
-<sup><a name="footnote1">1:</a></sup> Requires invite to Sentry.io <br/>
-<sup><a name="footnote2">2:</a></sup> Requires user with dev permissions on production
+<sup>Footnotes</sup> <br />
+<sup><a name="footnote1">1:</a></sup> Requires invite to Fly.io <br/>
+<sup><a name="footnote1">2:</a></sup> Requires invite to Sentry.io <br/>
+<sup><a name="footnote2">3:</a></sup> Requires user with dev permissions on production
 
 
 

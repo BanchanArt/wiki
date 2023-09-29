@@ -18,20 +18,29 @@ There a two branches:
 - While on main, push to github with `git push github main`.
 - When ready to merge changes to the live wiki, switch to `master`, merge via `git merge main`, and run `git push origin master`.
 
+### Editing Notes
+The Markdown used in [Github Wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/editing-wiki-content) differs from the Markdown used in Github Repos. Github Repos use [GFM, GitHub Flavored Markdown Spec](https://github.github.com/gfm/). Github Wikis use [GitHub Markup](https://github.com/github/markup) but is missing some of the features listed in the markup flavors listed there. For instance, wiki files with `.md` ending should be compiled using CommonMarker, but the footnotes extension is disabled whereas the superscript extension works.
+
+Quick Reference Table for Feature Support
+| Markdown Feature | Github Wikis | Github Repos | Details |
+| :----------- | :------------: | :------------: | ------------: |
+|  Notes & Warnings  |   Known Issue   |    Works | Issue opened for this.|
+|   Footnotes   |    Not supported, but has a known workaround|      Works | Workaround uses superscript and links. |
+|   MediaWiki syntax links   |    Works    |      Does not Work | Best to avoid in README.md|
 
 ### Quicklinks
-| [BanchanArt / banchan](https://github.com/BanchanArt/banchan) |
-[Live Wiki for above link](https://github.com/BanchanArt/banchan/wiki) |
- [BanchanArt / wiki](https://github.com/BanchanArt/wiki) |
+| [BanchanArt / banchan](https://github.com/BanchanArt/banchan) (project repo) |
+[Live Wiki](https://github.com/BanchanArt/banchan/wiki) (actual wiki) |
+ [BanchanArt / wiki](https://github.com/BanchanArt/wiki) (repo for wiki) |
 
 ## Wiki Table of Contents
 The following ToC is copied from the [_Sidebar.md file](_Sidebar.md).
 
--   \[[Home]]
--   \[[Getting Started]]
--   \[[Application Notes]]
--   \[[Environment Variables]]
--   \[[Operations]]
+-   [Home](Home.md)
+-   [Getting Started](Getting-Started.md)
+-   [Application Notes](Application-Notes.md)
+-   [Environment Variables](Environment-Variables.md)
+-   [Operations](Operations.md)
 
 ## Useful Links
 

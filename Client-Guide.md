@@ -2,16 +2,17 @@
 
 ## Step 1: Create an account
 
-    - Register for your account at <https://banchan.art/register>
+Register for your account at <https://banchan.art/register>
 
 ## Step 2: Confirm email
 
-    - Click the confirm link in your email.
+Click the confirm link in your email.
 
 ## Step 3: Find and follow artists
 
-    - From the home page, you can search by offering or by one of the suggested tags.
-    - From the discover, page you can search by offering type or artist.
+From the home page, you can search by offering or by one of the suggested tags.
+From the discover, page you can search by offering type or artist.
+TO-DO: add images of these
 
 ## Step 4: Review offerings
 
@@ -42,7 +43,7 @@
         -   paying final invoice
         -   accessing file
 
-Vocabulary to Define
+## Vocabulary to Define
 - Studio
 - Offering
 - Commission

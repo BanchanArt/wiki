@@ -1,6 +1,6 @@
 # Studio Guide
 
-When you initially register for an account on Banchan Art, it allows you to submit proposals to studios for commissions. If you are an artists, you will need beta access to open a studio.
+When you initially register for an account on Banchan Art, it allows you to submit proposals to studios for commissions. If you are an artist that would like to offer commissions, then you will need to request beta access to open a studio.
 
 > A **studio** is any place where an artist works. Here we use it to describe the place where an artist sets up their shop, gallery, and branding.
 
